@@ -5,10 +5,22 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('images/hero-bg.jpg') center/cover;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    position: relative;
+    overflow: hidden;
     color: white;
     padding: 100px 0;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('path/to/pattern.svg') center/cover;
+    opacity: 0.1;
 }
 
 /* Features Section */
@@ -28,8 +40,12 @@ body {
 }
 
 .navbar-brand {
+    font-size: 1.8rem;
+    color: white !important;
+    -webkit-text-fill-color: white;
+    background: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Buttons */
@@ -116,13 +132,6 @@ footer a:hover {
     padding: 15px 0;
 }
 
-.navbar-brand {
-    font-size: 1.8rem;
-    background: linear-gradient(45deg, #4e54c8, #8f94fb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .nav-link {
     font-weight: 500;
     padding: 10px 15px !important;
@@ -141,10 +150,82 @@ footer a:hover {
 
 /* Stats Cards */
 .stats-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 20px;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(78, 84, 200, 0.1);
+    border-radius: 50%;
+}
+
+/* How It Works Section */
+.step-number {
+    width: 50px;
+    height: 50px;
     background: linear-gradient(45deg, #4e54c8, #8f94fb);
     color: white;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/* Latest Resources Section */
+.latest-resources .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.latest-resources .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter Form */
+.newsletter-form .input-group {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.newsletter-form .form-control {
+    border: none;
+    padding: 12px 20px;
+}
+
+.newsletter-form .btn {
+    padding: 12px 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+/* Social Links */
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #4e54c8;
+    transform: translateY(-3px);
 }
 
 /* Responsive Adjustments */
@@ -156,4 +237,123 @@ footer a:hover {
     .hero-section {
         padding: 60px 0;
     }
+    
+    .stats-card {
+        margin-bottom: 20px;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .hero-section .btn-lg {
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+    
+    .hero-section .mt-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    border-radius: 15px 15px 0 0;
+}
+
+/* Contact Page Styles */
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* Recommendations Page Styles */
+.recommendation-card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Navigation */
+.navbar-nav .nav-item {
+    margin: 0 5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Social Media Icons in Navbar */
+.nav-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.nav-social-icons a {
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.nav-social-icons a:hover {
+    transform: translateY(-3px);
 } 

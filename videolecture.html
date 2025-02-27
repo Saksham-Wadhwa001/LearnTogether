@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Lectures</title>
+</head>
+<body>
+    <h1>This is video lectures page</h1>            
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EduConnect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Study Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="notes.html">Class Notes</a></li>
+                            <li><a class="dropdown-item" href="https://nitkurukshetra-repo.vercel.app/">Past Papers</a></li>
+                            <li><a class="dropdown-item active" href="videolecture.html">Video Lectures</a></li>
+                            <li><a class="dropdown-item" href="recommendations.html">Recommendations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-primary ms-2" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section py-4">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white mb-3">Video Lectures</h1>
+            <p class="lead text-white">Access high-quality educational videos from expert instructors</p>
+        </div>
+    </header>
+
+    <!-- Video Categories -->
+    <div class="container py-5">
+        <!-- Subject Filter -->
+        <div class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <select class="form-select" id="subjectFilter">
+                    <option value="all">All Subjects</option>
+                    <option value="dsa">Data Structures</option>
+                    <option value="dsd">Digital System Design</option>
+                    <option value="business">Business Studies</option>
+                    <option value="math">Mathematics</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Data Structures Section -->
+        <section class="mb-5">
+            <h2 class="mb-4">Data Structures</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/B31LgI4Y4DQ" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Data Structures</h5>
+                            <p class="card-text">Learn the basics of data structures and their implementations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/zg9ih6SVACc" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Arrays & Linked Lists</h5>
+                            <p class="card-text">Detailed explanation of fundamental data structures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital System Design Section -->
+        <section class="mb-5">
+            <h2 class="mb-4">Digital System Design</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/M0mx8S05v60" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Logic Basics</h5>
+                            <p class="card-text">Understanding digital logic gates and boolean algebra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/7bHqv6yLH5U" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sequential Circuits</h5>
+                            <p class="card-text">Learn about flip-flops and sequential circuit design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Studies Section -->
+        <section class="mb-5">
+            <h2 class="mb-4">Business Studies</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/Kt5Y__E94BI" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Business</h5>
+                            <p class="card-text">Basic concepts and principles of business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Management</h5>
+                            <p class="card-text">Understanding marketing strategies and consumer behavior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mathematics Section -->
+        <section class="mb-5">
+            <h2 class="mb-4">Mathematics</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/7gigNsz4Oe8" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Calculus Fundamentals</h5>
+                            <p class="card-text">Learn derivatives, integrals and their applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/fYyARMqiaag" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Linear Algebra</h5>
+                            <p class="card-text">Understanding matrices, vectors and linear transformations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2024 EduConnect. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

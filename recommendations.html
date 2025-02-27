@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Recommendations - LearnTogether</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Same Navigation as index.html -->
+
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold mb-4">Study Recommendations</h1>
+        
+        <!-- Filters -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>All Subjects</option>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>All Types</option>
+                    <option>Books</option>
+                    <option>Online Courses</option>
+                    <option>Video Lectures</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search recommendations...">
+                    <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Grid -->
+        <div class="row g-4">
+            <!-- Book Recommendation -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="badge bg-primary">Mathematics</span>
+                            <span class="badge bg-secondary">Book</span>
+                        </div>
+                        <h5 class="card-title">Advanced Calculus</h5>
+                        <p class="card-text">A comprehensive guide to calculus with detailed explanations and examples.</p>
+                        <div class="mb-3">
+                            <small class="text-muted">
+                                <i class="fas fa-star text-warning"></i> 4.8/5 (120 reviews)
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online Course -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="badge bg-success">Physics</span>
+                            <span class="badge bg-secondary">Online Course</span>
+                        </div>
+                        <h5 class="card-title">Quantum Mechanics Basics</h5>
+                        <p class="card-text">Interactive course covering fundamental concepts of quantum mechanics.</p>
+                        <div class="mb-3">
+                            <small class="text-muted">
+                                <i class="fas fa-star text-warning"></i> 4.9/5 (85 reviews)
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more recommendations -->
+        </div>
+
+        <!-- Add Resource Button -->
+        <div class="text-center mt-5">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addResourceModal">
+                <i class="fas fa-plus me-2"></i> Add Recommendation
+            </button>
+        </div>
+    </div>
+
+    <!-- Add Resource Modal -->
+    <div class="modal fade" id="addResourceModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Study Resource</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Title</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Type</label>
+                            <select class="form-select">
+                                <option>Book</option>
+                                <option>Online Course</option>
+                                <option>Video Lecture</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <select class="form-select">
+                                <option>Mathematics</option>
+                                <option>Physics</option>
+                                <option>Chemistry</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Resource Link</label>
+                            <input type="url" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add Resource</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Same Footer as index.html -->
+</body>
+</html> 
