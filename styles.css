@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('images/hero-bg.jpg') center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Features Section */
+.features .card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Styles */
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Button Enhancements */
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #4e54c8, #4e54c8);
+    transform: translateY(-2px);
+}
+
+/* Form Controls */
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.1);
+    border-color: #4e54c8;
+}
+
+/* Modal Enhancements */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 20px;
+}
+
+/* Navigation Enhancements */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 10px 15px !important;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background: rgba(78, 84, 200, 0.1);
+}
+
+/* User Avatar */
+.rounded-circle {
+    border: 2px solid #4e54c8;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+    }
+} 
